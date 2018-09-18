@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.senasoft_1.registrovehiculo.Fragmentos.FragmentCapacidad">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asignar Capacidad Máxima"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/cantidadCarros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:inputType="number"
+        android:hint="Cantidad máxima de carros"/>
+
+    <EditText
+        android:id="@+id/cantidadMotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110sp"
+        android:inputType="number"
+        android:hint="Cantidad máxima de motos"
+        />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="guardar"
+        android:layout_marginTop="180sp"
+        android:background="@color/Black"
+        android:textColor="@color/White"
+        android:layout_gravity="center_horizontal"
+        />
+</FrameLayout>

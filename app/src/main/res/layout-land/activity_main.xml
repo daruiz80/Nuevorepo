@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:id="@+id/rela"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/DarkOrange">
+    <ImageButton
+        android:id="@+id/registrar"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:background="@drawable/registro"
+        android:onClick="btnItems"/>
+
+    <ImageButton
+        android:id="@+id/capacidad"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/registrar"
+        android:background="@drawable/capacidad"
+        android:onClick="btnItems"/>
+
+    <ImageButton
+        android:id="@+id/informes"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/capacidad"
+        android:background="@drawable/reportes"
+        android:onClick="btnItems"/>
+
+    <ImageButton
+        android:id="@+id/salir"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/informes"
+        android:background="@drawable/salir"
+        android:onClick="btnItems"/>
+</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/framehome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/rela">
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.senasoft_1.registrovehiculo.Fragmentos.FragmentRegistro">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:src="@drawable/carro"
+        android:layout_marginTop="15sp"
+        />
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="100sp"
+        android:src="@drawable/moto"
+        android:layout_gravity="right"
+        android:layout_marginTop="15sp"
+        />
+    <TextView
+        android:id="@+id/numCarrosDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de Carros:"
+        android:textSize="16sp"
+        android:layout_marginTop="150sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sitiosDisCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sitios Disponibles:"
+        android:textSize="16sp"
+        android:layout_marginTop="180sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/numMotosDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de Motos:"
+        android:textSize="16sp"
+        android:layout_marginTop="150sp"
+        android:layout_marginLeft="200sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sitiosDisMot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sitios Disponibles:"
+        android:textSize="16sp"
+        android:layout_marginTop="180sp"
+        android:layout_marginLeft="200sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la clase de vehículo"
+        android:textSize="16sp"
+        android:layout_marginTop="230sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/tipoVehiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230sp"
+        android:layout_gravity="right"
+        android:entries="@array/tipo_vehiculo"></Spinner>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280sp">
+
+        <RadioButton
+            android:id="@+id/entrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrada"/>
+
+        <RadioButton
+            android:id="@+id/salida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salida"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registrar"
+        android:layout_marginTop="380sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Black"
+        android:textColor="@color/White"/>
+
+</FrameLayout>
